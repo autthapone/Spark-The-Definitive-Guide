@@ -1,3 +1,4 @@
+
 /home/bank/dev/Spark-The-Definitive-Guide/data/flight-data/csv/2015-summary.csv
 
 conda activate play_spark
@@ -20,9 +21,3 @@ export SPARK_HOME="/opt/cloudera/parcels/SPARK3/lib/spark3"
 export PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.10.9.3-src.zip:$PYTHONPATH
 
 /home/bank/dev/Spark-The-Definitive-Guide/data/retail-data/by-day/*.csv
-
-purchaseByCustomerPerHour.writeStream\
-.format("console")\
-.queryName("customer_purchases_2")\
-.outputMode("complete")\
-.start()

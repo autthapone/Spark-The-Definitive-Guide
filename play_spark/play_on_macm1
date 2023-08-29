@@ -1,0 +1,1 @@
+spark-submit --master local /Users/bank/spark-3.4.1-bin-hadoop3/examples/src/main/python/pi.py 10
